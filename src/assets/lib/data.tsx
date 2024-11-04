@@ -35,7 +35,9 @@ export const headerIntroData = {
     de: "Hi, ich bin Hossam Eldin",
     en: "Hi, I'm Hossam Eldin",
   },
-  subtitle: "Test Automation Engineer Based In Germany",
+  subtitle: {
+    "de":"Testautomations-Ingenieur mit Sitz in Deutschland",
+    "en":"Test Automation Engineer Based In Germany"},
   description: {
     "de": "Ich bin Hossam Eldin, ein Testautomatisierungsingenieur mit 7 Jahren Erfahrung in der Softwarebranche. Mein Ziel ist es, meine Karriere voranzutreiben und an spannenden Projekten im Bereich Softwaretests teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für das Testen. Lassen Sie uns gemeinsam die Zukunft der Softwarequalität gestalten!",
     "en": "I'm Hossam Eldin, a Test Automation Engineer with 7 years of experience in the software industry. My goal is to advance my career and contribute to exciting projects in software testing. Here I showcase my work and passion for testing. Let's shape the future of software quality together!",
