@@ -31,8 +31,9 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
-      <h2>{headerIntroData.subtitle}</h2>
-      <p className="w-1/2 text-center max-lg:hidden">
+      <h2>
+          {language === "DE" ? headerIntroData.subtitle.de : headerIntroData.subtitle.en}
+</h2>      <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de
           : headerIntroData.description.en}
