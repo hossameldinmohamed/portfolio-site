@@ -7,6 +7,14 @@ import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
 
+// Add this style once at the root of your component file, outside the main function
+const gradientAnimationStyles = `
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}`;
+
 const HeaderIntro: React.FC = () => {
   const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
@@ -18,6 +26,11 @@ const HeaderIntro: React.FC = () => {
       ref={ref}
       id="home"
     >
+      {/* Add the gradient animation styles */}
+      <style>
+        {gradientAnimationStyles}
+      </style>
+
       <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
       <img
@@ -31,9 +44,23 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
-      <h2>
-          {language === "DE" ? headerIntroData.subtitle.de : headerIntroData.subtitle.en}
-</h2>            <p className="w-1/2 text-center max-lg:hidden">
+
+      {/* Subtitle with animated gradient */}
+      <h2
+        style={{
+          background: "linear-gradient(270deg, #CC6600, #DDA0DD, #FF7F00)",
+          backgroundSize: "400% 400%",
+          backgroundClip: "text",
+          color: "transparent",
+          animation: "moveGradient 8s ease infinite",
+          display: "inline-block",
+          fontWeight: "bold",
+        }}
+      >
+        {language === "DE" ? headerIntroData.subtitle.de : headerIntroData.subtitle.en}
+      </h2>
+
+      <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de
           : headerIntroData.description.en}
