@@ -36,7 +36,7 @@ export const headerIntroData = {
     en: "Hi, I'm Hossam Eldin",
   },
   subtitle: {
-    "de":"Testautomations-Ingenieur mit Sitz in Deutschland",
+    "de":"Testautomations-Ingenieur aus Deutschland",
     "en":"Test Automation Engineer Based In Germany"},
   description: {
     "de": "Ich bin Hossam Eldin, ein Testautomatisierungsingenieur mit 7 Jahren Erfahrung in der Softwarebranche. Mein Ziel ist es, meine Karriere voranzutreiben und an spannenden Projekten im Bereich Softwaretests teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für das Testen. Lassen Sie uns gemeinsam die Zukunft der Softwarequalität gestalten!",
@@ -140,7 +140,7 @@ export const skillsDataWeb = [
       },
       {
         title: "RobotFramework",
-        hash: "#RobotFramework",
+        hash: "#Robot",
         icon: roboticon,
         color: "#007ACC",
       },
@@ -172,7 +172,7 @@ export const skillsDataWeb = [
       ,
       {
         title: "Katalon Studio",
-        hash: "#Katalon Studio",
+        hash: "#Katalon",
         icon: [katalonicon],
         color: ["#1572B6"],
       }
@@ -244,7 +244,7 @@ export const skillsDataCMS = [
 export const navLinks = [
   { de: "Startseite", en: "Home", hash: "#home", icon: GoHome },
   { de: "Fähigkeiten", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Zertifikate",en: "Certificates", hash:"#certificates", icon: GoPerson},
+  { de: "Zertifikate",en: "Certificates", hash:"#certificates", icon: GoProject},
   { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson},
 ] as const;
 
