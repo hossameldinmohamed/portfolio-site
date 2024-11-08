@@ -22,7 +22,7 @@ const HeaderIntro: React.FC = () => {
 
   return (
     <section
-      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
+      className="hero flex flex-col justify-center items-center gap-10 h-full max-lg:gap-4 p-4"
       ref={ref}
       id="home"
     >
@@ -33,16 +33,19 @@ const HeaderIntro: React.FC = () => {
 
       <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
+      {/* Profile Image */}
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-1/2"
       />
-      <h1>
+
+      {/* Name and Wave Icon */}
+      <h1 className="text-center">
         {language === "DE"
           ? headerIntroData.title.de
           : headerIntroData.title.en}
-        <span className="wave text-7xl">&#128075;&#127997;</span>
+        <span className="wave text-7xl ml-2">&#128075;&#127997;</span>
       </h1>
 
       {/* Subtitle with animated gradient */}
@@ -56,16 +59,21 @@ const HeaderIntro: React.FC = () => {
           display: "inline-block",
           fontWeight: "bold",
         }}
+        className="text-center"
       >
-        {language === "DE" ? headerIntroData.subtitle.de : headerIntroData.subtitle.en}
+        {language === "DE"
+          ? headerIntroData.subtitle.de
+          : headerIntroData.subtitle.en}
       </h2>
 
+      {/* Description - Displayed only on desktop */}
       <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de
           : headerIntroData.description.en}
       </p>
 
+      {/* Button and Scroll Icon - Visible on both desktop and mobile */}
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
         {headerIntroData.buttons.map((button, index) => (
           <Button
@@ -81,7 +89,9 @@ const HeaderIntro: React.FC = () => {
           />
         ))}
       </div>
-      <div className="scroll-down-container animate-bounce flex gap-6">
+
+      {/* Scroll down icon */}
+      <div className="scroll-down-container animate-bounce flex gap-6 max-lg:block">
         <BsMouse className="text-[2.6rem]" />
       </div>
     </section>
