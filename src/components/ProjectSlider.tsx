@@ -102,11 +102,6 @@ const ProjectSlider: React.FC = () => {
                       <strong>{language === "DE" ? "Zertifikat-ID" : "Certificate ID"}:</strong> {certificate.certificateId}
                     </p>
                   </div>
-                  <img
-                   // src={certificate.image}
-                    alt={`${certificate.title.en} image`}
-                    className="h-64 w-auto object-contain rounded-lg ml-8 filter brightness-90 contrast-110 bg-white p-4 ml-8 relative aspect-square bg-white p-4 rounded-lg overflow-hidden ml-8"
-                    />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -127,11 +122,6 @@ const ProjectSlider: React.FC = () => {
                     <strong>{language === "DE" ? "Zertifikat-ID" : "Certificate ID"}:</strong> {certificate.certificateId}
                   </p>
                 </div>
-                <img
-                //  src={certificate.image}
-                  alt={`${certificate.title.en} image`}
-                  className="h-48 w-auto object-contain rounded-lg"
-                />
               </article>
             ))}
           </div>
