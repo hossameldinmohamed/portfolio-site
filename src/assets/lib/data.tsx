@@ -134,7 +134,7 @@ export const skillsDataWeb = [
         color: "#1572B6",
       },
       {
-        title: "RobotFramework",
+        title: "Robot Framework",
         hash: "#Robot",
         icon: roboticon,
         color: "#007ACC",
