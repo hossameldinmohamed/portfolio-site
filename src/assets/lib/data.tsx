@@ -25,11 +25,6 @@ import { FiGithub, FiLinkedin, FiMail  } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
-import foundation  from "../../assets/img/foundation.jpg"; 
-import agile from "../../assets/img/agile.svg";
-import mobile from "../../assets/img/Astqb.png";
-
-
 export const headerIntroData = {
   title: {
     de: "Hi, ich bin Hossam Eldin",
@@ -296,29 +291,35 @@ const aboutMeData = {
   paragraphs_DE: [
     {
       title: "Qualitätsexperte",
-      description: "Durch frühzeitiges Fehlererkennen und Stabilität liefere ich leistungsfähige und zuverlässige Softwarelösungen."
+      description: "Durch frühzeitiges Fehlererkennen und Stabilität liefere ich leistungsfähige und zuverlässige Softwarelösungen.",
+      icon: hardwareicon
     },
     {
       title: "Testautomatisierung für Effizienz",
-      description: "Mit fortschrittlichen Tools beschleunige ich Entwicklungszyklen, erhöhe die Sicherheit und ermögliche Wiederholbarkeit."
+      description: "Mit fortschrittlichen Tools beschleunige ich Entwicklungszyklen, erhöhe die Sicherheit und ermögliche Wiederholbarkeit.",
+      icon: caricon
     },
     {
       title: "Leidenschaft für Optimierung",
-      description: "Ich treibe kontinuierliche Verbesserung voran, um die Softwarequalität zu maximieren und Marktanforderungen zu erfüllen."
+      description: "Ich treibe kontinuierliche Verbesserung voran, um die Softwarequalität zu maximieren und Marktanforderungen zu erfüllen.",
+      icon: travelicon
     }
   ],
   paragraphs_EN: [
     {
       title: "Quality Expert",
-      description: "By identifying issues early and maintaining stability, I deliver powerful and reliable software solutions."
+      description: "By identifying issues early and maintaining stability, I deliver powerful and reliable software solutions.",
+      icon: hardwareicon
     },
     {
       title: "Test Automation for Efficiency",
-      description: "With advanced tools, I help accelerate development cycles, enhance security, and ensure repeatability."
+      description: "With advanced tools, I help accelerate development cycles, enhance security, and ensure repeatability.",
+      icon: caricon
     },
     {
       title: "Passion for Optimization",
-      description: "I drive continuous improvement to maximize software quality and meet evolving market demands."
+      description: "I drive continuous improvement to maximize software quality and meet evolving market demands.",
+      icon: travelicon
     }
   ]
 };
