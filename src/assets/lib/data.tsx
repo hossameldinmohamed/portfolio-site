@@ -72,7 +72,7 @@ export const certificatesData = [
       en: "Foundation level certification by ISTQB covering software testing fundamentals.",
       de: "Zertifizierung auf Grundlagenebene durch ISTQB, die die Grundlagen des Softwaretestens abdeckt.",
     },
-image : foundation
+//image : foundation
   },
   {
     title: {
@@ -88,7 +88,7 @@ image : foundation
       en: "Certification by ISTQB for Agile testing methodologies and practices.",
       de: "Zertifizierung durch ISTQB für agile Testmethoden und -praktiken.",
     },
-    image : agile
+ //   image : agile
   },
   {
     title: {
@@ -104,7 +104,7 @@ image : foundation
       en: "Certification by ASTQB for testing on mobile platforms, covering mobile-specific testing techniques and tools.",
       de: "Zertifizierung durch ASTQB für Tests auf mobilen Plattformen, einschließlich mobiler Testtechniken und -tools.",
     },
-    image : mobile
+ //   image : mobile
   }
 ] as const;
 
@@ -288,54 +288,40 @@ export const quotesData = [
   },
 ] as const;
 
-export const aboutMeData = {
+const aboutMeData = {
   title: "Über mich",
-  title_EN: "About me",
-  description: "Ein Einblick in meine Leidenschaft für Softwarequalität",
-  description_EN: "An insight into my passion for software quality",
+  title_EN: "About Me",
+  description: "As a seasoned test automation engineer with 7 years of experience, I'm passionate about ensuring software quality and driving innovation.",
+  description_EN: "As a seasoned test automation engineer with 7 years of experience, I'm passionate about ensuring software quality and driving innovation.",
   paragraphs_DE: [
     {
-      title: "Experte für Qualitätssicherung",
-      description:
-        "Mit 7 Jahren Erfahrung in der Software-Qualitätssicherung und Testautomatisierung stelle ich sicher, dass jedes Produkt höchste Standards erfüllt. Mein Fokus liegt darauf, Fehler frühzeitig zu erkennen und die Stabilität des Systems zu gewährleisten – für leistungsstarke und verlässliche Softwarelösungen.",
-      icon: hardwareicon,
+      title: "Qualitätsexperte",
+      description: "Durch frühzeitiges Fehlererkennen und Stabilität liefere ich leistungsfähige und zuverlässige Softwarelösungen."
     },
     {
-      title: "Testautomatisierung als Motor für Innovation",
-      description:
-        "Ich sehe Testautomatisierung als Schlüssel zur Effizienzsteigerung und Innovation. Durch den Einsatz fortschrittlicher Tools wie Selenium, Jenkins und Docker sorge ich dafür, dass Entwicklungsprozesse schneller, sicherer und wiederholbar werden – und biete dem Team die Freiheit, sich auf Kreativität und Wachstum zu konzentrieren.",
-      icon: caricon,
+      title: "Testautomatisierung für Effizienz",
+      description: "Mit fortschrittlichen Tools beschleunige ich Entwicklungszyklen, erhöhe die Sicherheit und ermögliche Wiederholbarkeit."
     },
     {
-      title: "Leidenschaft für kontinuierliche Optimierung",
-      description:
-        "In der dynamischen Welt der Softwareentwicklung treibt mich mein Streben nach kontinuierlicher Verbesserung an. Ich optimiere fortlaufend Teststrategien und -prozesse, um die Softwarequalität zu maximieren und sicherzustellen, dass sie den ständig wachsenden Anforderungen des Marktes gerecht wird.",
-      icon: travelicon,
-    },
+      title: "Leidenschaft für Optimierung",
+      description: "Ich treibe kontinuierliche Verbesserung voran, um die Softwarequalität zu maximieren und Marktanforderungen zu erfüllen."
+    }
   ],
   paragraphs_EN: [
     {
-      title: "Expert in Quality Assurance",
-      description:
-        "With 7 years of experience in software quality assurance and test automation, I ensure that every product meets the highest standards. My focus is on identifying issues early and maintaining system stability to deliver powerful and reliable software solutions.",
-      icon: hardwareicon,
+      title: "Quality Expert",
+      description: "By identifying issues early and maintaining stability, I deliver powerful and reliable software solutions."
     },
     {
-      title: "Test Automation as a Catalyst for Innovation",
-      description:
-        "I view test automation as a key driver of efficiency and innovation. By leveraging advanced tools like Selenium, Jenkins, and Docker, I help accelerate development cycles, enhance security, and ensure repeatability, giving teams the freedom to focus on creativity and growth.",
-      icon: caricon,
+      title: "Test Automation for Efficiency",
+      description: "With advanced tools, I help accelerate development cycles, enhance security, and ensure repeatability."
     },
     {
-      title: "Passion for Continuous Optimization",
-      description:
-        "In the fast-paced world of software development, my passion for continuous improvement drives me. I constantly refine test strategies and processes to maximize software quality and ensure it meets the ever-growing demands of the market.",
-      icon: travelicon,
-    },
-  ],
+      title: "Passion for Optimization",
+      description: "I drive continuous improvement to maximize software quality and meet evolving market demands."
+    }
+  ]
 };
-
-
 
 
 
