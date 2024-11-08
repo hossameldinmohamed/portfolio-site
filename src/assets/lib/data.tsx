@@ -286,8 +286,8 @@ export const quotesData = [
 export const aboutMeData = {
   title: "Über mich",
   title_EN: "About Me",
-  description: "As a seasoned test automation engineer with 7 years of experience, I'm passionate about ensuring software quality and driving innovation.",
-  description_EN: "As a seasoned test automation engineer with 7 years of experience, I'm passionate about ensuring software quality and driving innovation.",
+  description: "Ein Einblick in meine Leidenschaft für Softwarequalität",
+  description_EN: "An insight into my passion for software quality",
   paragraphs_DE: [
     {
       title: "Qualitätsexperte",
