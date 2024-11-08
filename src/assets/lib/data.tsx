@@ -283,7 +283,7 @@ export const quotesData = [
   },
 ] as const;
 
-const aboutMeData = {
+export const aboutMeData = {
   title: "Über mich",
   title_EN: "About Me",
   description: "As a seasoned test automation engineer with 7 years of experience, I'm passionate about ensuring software quality and driving innovation.",
