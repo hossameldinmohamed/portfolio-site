@@ -46,14 +46,14 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8 max-lg:pt-32 ${
         theme === "dark"
           ? "bg-[--blackblue] dark-mode-shadow"
           : "bg-[--icewhite] dark-shadow"
       }`}
     >
       <div
-        className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
+        className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded-t-xl`}
       >
         <p className="font-black text-4xl">
           <span className="text-[--orange]">&lt;</span>
@@ -64,17 +64,17 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       {skillsData[0].skills.map((skill, index) => (
         <div
           key={index}
-          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem]  text-center max-lg:items-center    ${
+          className={`skill-item cursor-pointer flex flex-col items-center gap-4 rounded-2xl p-6 border-solid border-[0.25rem] text-center transform transition-transform duration-200 hover:scale-105 ${
             theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
           }`}
-          data-tooltip-id="my-tooltip"
-          data-tooltip-content={skill.title}
           style={{
             borderColor: getSkillColor(theme, skill),
           }}
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content={skill.title}
           onMouseEnter={(e) => {
             e.currentTarget.style.animation = "pulse 2s infinite";
-            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.transform = "scale(1.05)";
             document.documentElement.style.setProperty(
               "--box-shadow-color",
               `${getSkillColor(theme, skill)}b3`
@@ -89,12 +89,14 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
             );
           }}
         >
-          <img
-            src={getSkillIconSrc(theme, skill)}
-            alt={`${skill.icon}-icon`}
-            className="h-[10rem]"
-          />
-          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
+          <div className="icon-container flex items-center justify-center h-[60px] w-[60px]">
+            <img
+              src={getSkillIconSrc(theme, skill)}
+              alt={`${skill.icon}-icon`}
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <h3 className="text-[1.5rem] max-lg:text-[1.2rem] overflow-hidden text-ellipsis">
             {skill.title}
           </h3>
         </div>
